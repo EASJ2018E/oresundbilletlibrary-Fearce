@@ -1,0 +1,106 @@
+{
+  "C:\\Users\\theke\\source\\repos\\oresundbilletlibrary-Fearce\\OresundBilletLibraryTests\\bin\\Debug\\netcoreapp2.1\\OresundBilletLibrary.dll": {
+    "C:\\Users\\theke\\source\\repos\\oresundbilletlibrary-Fearce\\OresundBilletLibrary\\Bil.cs": {
+      "OresundBilletLibrary.Bil": {
+        "System.Decimal OresundBilletLibrary.Bil::Pris()": {
+          "Lines": {
+            "9": 3,
+            "10": 3,
+            "11": 3
+          },
+          "Branches": [
+            {
+              "Line": 10,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 10,
+              "Offset": 7,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.String OresundBilletLibrary.Bil::KøretøjType()": {
+          "Lines": {
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        },
+        "System.Decimal OresundBilletLibrary.Bil::TotalPris()": {
+          "Lines": {
+            "23": 2,
+            "24": 2,
+            "25": 2
+          },
+          "Branches": []
+        },
+        "System.DateTime OresundBilletLibrary.Bil::get_Dato()": {
+          "Lines": {
+            "27": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\theke\\source\\repos\\oresundbilletlibrary-Fearce\\OresundBilletLibrary\\MC.cs": {
+      "OresundBilletLibrary.MC": {
+        "System.Decimal OresundBilletLibrary.MC::Pris()": {
+          "Lines": {
+            "11": 3,
+            "12": 3,
+            "13": 3
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 12,
+              "Offset": 7,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.String OresundBilletLibrary.MC::KøretøjType()": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        },
+        "System.DateTime OresundBilletLibrary.MC::get_Dato()": {
+          "Lines": {
+            "20": 2
+          },
+          "Branches": []
+        },
+        "System.Decimal OresundBilletLibrary.MC::TotalPris()": {
+          "Lines": {
+            "27": 2,
+            "28": 2,
+            "29": 2
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
