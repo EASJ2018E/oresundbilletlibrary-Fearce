@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BilletLibrary">
+      <HintPath>..\..\..\libraries\BilletLibrary\BilletLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="OresundBilletLibrary">
+      <HintPath>..\OresundBilletLibrary\bin\Debug\netcoreapp2.1\OresundBilletLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="StoreBaeltBilletLibrary">
+      <HintPath>..\..\storebaeltlibrary-Fearce\StoreBaeltBilletLibrary\bin\Debug\netcoreapp2.1\StoreBaeltBilletLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

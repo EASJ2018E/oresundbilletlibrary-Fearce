@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundBilletLibrary", "Ore
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBilletLibraryTests", "OresundBilletLibraryTests\OresundBilletLibraryTests.csproj", "{A6C2F8A8-0F91-4A7D-8484-E8DE2176B022}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletKundeAppTests", "BilletKundeAppTests\BilletKundeAppTests.csproj", "{DF4D806E-654C-4C2B-B30B-341BCFF5123E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletKundeApp", "BilletKundeApp\BilletKundeApp.csproj", "{DF7712C9-A5E9-4CA6-9B68-9E7A292BB1D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A6C2F8A8-0F91-4A7D-8484-E8DE2176B022}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6C2F8A8-0F91-4A7D-8484-E8DE2176B022}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6C2F8A8-0F91-4A7D-8484-E8DE2176B022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4D806E-654C-4C2B-B30B-341BCFF5123E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4D806E-654C-4C2B-B30B-341BCFF5123E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4D806E-654C-4C2B-B30B-341BCFF5123E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4D806E-654C-4C2B-B30B-341BCFF5123E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7712C9-A5E9-4CA6-9B68-9E7A292BB1D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7712C9-A5E9-4CA6-9B68-9E7A292BB1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7712C9-A5E9-4CA6-9B68-9E7A292BB1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7712C9-A5E9-4CA6-9B68-9E7A292BB1D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

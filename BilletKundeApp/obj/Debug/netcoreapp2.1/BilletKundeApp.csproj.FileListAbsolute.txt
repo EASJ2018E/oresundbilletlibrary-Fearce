@@ -1,0 +1,16 @@
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\BilletKundeApp.deps.json
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\BilletKundeApp.dll
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\BilletKundeApp.pdb
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\BilletLibrary.dll
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\OresundBilletLibrary.dll
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\StoreBaeltBilletLibrary.dll
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\BilletLibrary.xml
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\OresundBilletLibrary.pdb
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\bin\Debug\netcoreapp2.1\StoreBaeltBilletLibrary.pdb
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\obj\Debug\netcoreapp2.1\BilletKundeApp.csprojAssemblyReference.cache
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\obj\Debug\netcoreapp2.1\BilletKundeApp.csproj.CoreCompileInputs.cache
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\obj\Debug\netcoreapp2.1\BilletKundeApp.AssemblyInfoInputs.cache
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\obj\Debug\netcoreapp2.1\BilletKundeApp.AssemblyInfo.cs
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\obj\Debug\netcoreapp2.1\BilletKundeApp.csproj.CopyComplete
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\obj\Debug\netcoreapp2.1\BilletKundeApp.dll
+C:\Users\theke\source\repos\oresundbilletlibrary-Fearce\BilletKundeApp\obj\Debug\netcoreapp2.1\BilletKundeApp.pdb
