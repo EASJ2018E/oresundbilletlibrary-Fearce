@@ -19,6 +19,8 @@ namespace OresundBilletLibrary
 
         public override DateTime Dato { get; set; }
 
+        public override bool Brobizz { get; set; }
+
         /// <summary>
         /// Override for at sikre sig at prisen er fast og ikke med % fratrækning
         /// </summary>

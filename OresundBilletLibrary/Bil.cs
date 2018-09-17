@@ -25,5 +25,7 @@ namespace OresundBilletLibrary
         }
 
         public override DateTime Dato { get; set; }
+
+        public override bool Brobizz { get; set; }
     }
 }
