@@ -31,10 +31,6 @@ namespace TicketMaster
         public MainPage()
         {
             this.InitializeComponent();
-          //  List = new List<string>();
-            Timer.Tick += Timer_Tick;
-            Timer.Interval = new TimeSpan(0, 0, 1);
-            Timer.Start();
         }
 
         public void UpdatePrice()
@@ -104,12 +100,6 @@ namespace TicketMaster
             {
                 var messageDialog = new MessageDialog("Kontakt administrator med fejlen " + ex).ShowAsync();
             }
-        }
-
-        private void Timer_Tick(object sender, object e)
-        {
-           
-
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
