@@ -19,14 +19,14 @@
         <TextBlock x:Name="PrisLabel" HorizontalAlignment="Left" Margin="88,200,0,0" Text="{Binding Pris,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,300,0,0" Text="Total Pris" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="TotalPrisLabel" HorizontalAlignment="Left" Margin="145,300,0,0" Text="{Binding TotalPris,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox x:Name="Nummerplade" HorizontalAlignment="Left" Margin="144,125,0,0" Text="{Binding Nummerplade,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="20"/>
-        <ComboBox x:Name="Køretøj" HorizontalAlignment="Left" Margin="116,162,0,0" VerticalAlignment="Top" ItemsSource="{Binding Køretøjer}" SelectedItem="{Binding SelectedKøretøj,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
-        <DatePicker x:Name="DatePicker" HorizontalAlignment="Left" Margin="57,78,0,0" VerticalAlignment="Top" Width="230"/>
-        <CheckBox x:Name="Brobizz" Content="" HorizontalAlignment="Left" Margin="116,42,0,0" VerticalAlignment="Top" IsChecked="{Binding Brobizz,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox TextChanged="Nummerplade_OnTextChanged" x:Name="Nummerplade" HorizontalAlignment="Left" Margin="144,125,0,0" Text="{Binding Nummerplade,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="20"/>
+        <ComboBox SelectionChanged="Køretøj_OnSelectionChanged" x:Name="Køretøj" HorizontalAlignment="Left" Margin="116,162,0,0" VerticalAlignment="Top" ItemsSource="{Binding Køretøjer}" SelectedItem="{Binding SelectedKøretøj,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+        <DatePicker DateChanged="DatePicker_OnDateChanged" x:Name="DatePicker" HorizontalAlignment="Left" Margin="57,78,0,0" VerticalAlignment="Top" Width="230"/>
+        <CheckBox Checked="Brobizz_OnChecked" x:Name="Brobizz" Content="" HorizontalAlignment="Left" Margin="116,42,0,0" VerticalAlignment="Top" IsChecked="{Binding Brobizz,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
         <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="Tilføj billet" Margin="40,240,0,0" VerticalAlignment="Top" Width="267" Click="AppBarButton_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="43,10,0,0" Text="Bro" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <ComboBox x:Name="Bro" HorizontalAlignment="Left" Margin="92,4,0,0" VerticalAlignment="Top" ItemsSource="{Binding Broer}" SelectedItem="{Binding SelectedBro,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
-        <ListView x:Name="Liste" HorizontalAlignment="Left" Height="260" Margin="20,335,0,0" VerticalAlignment="Top" Width="1147" ItemsSource="{Binding Ture,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" FontFamily="Segoe UI"/>
+        <ComboBox x:Name="Bro" HorizontalAlignment="Left" Margin="92,4,0,0" VerticalAlignment="Top" ItemsSource="{Binding Broer}" SelectedItem="{Binding SelectedBro,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" SelectionChanged="Bro_SelectionChanged"/>
+        <ListView x:Name="Liste" HorizontalAlignment="Left" Height="260" Margin="20,335,0,0" VerticalAlignment="Top" Width="1147" ItemsSource="{Binding Ture,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontFamily="Segoe UI"/>
         <RichTextBlock HorizontalAlignment="Left" Height="293" Margin="429,4,0,0" VerticalAlignment="Top" Width="276">
             <Paragraph>
                 <Run Text="Velkommen til TicketMaster. Her kan du købe billetter til Storebæltsbroen og Øresundsbroen. Du kan vælge om du har en brobizz for 5% rabat på prisen hos Storebælt, eller for en fast prisnedsætning hos Øresundsbroen. Udover dette er der 20% rabat lørdag og søndag ved Storebæltsbroen."/>

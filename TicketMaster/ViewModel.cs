@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
@@ -14,7 +15,6 @@ using MC = OresundBilletLibrary.MC;
 
 namespace TicketMaster
 {
-
     public class ViewModel
     {
 
@@ -27,7 +27,7 @@ namespace TicketMaster
         public static bool Brobizz { get; set; }
         public static string Nummerplade { get; set; }
 
-        public static List<string> Ture { get; set; }
+        public static ObservableCollection<string> Ture { get; set; }
 
         public string Pris { get; set; }
 
@@ -39,7 +39,7 @@ namespace TicketMaster
             Køretøjer = new List<string>(new string[] { "Bil", "Mc" });
             Broer = new List<string>(new string[] { "Øresund", "Storebælt" });
             Kunde = new Kunde();
-            Ture = new List<string>();
+            Ture = new ObservableCollection<string>();
             Ture.Add("Liste over ture:");
         }
 
@@ -57,7 +57,7 @@ namespace TicketMaster
                         bil.Nummerplade = Nummerplade;
                         Kunde.Ture.Add(bil);
                         TotalPris = Kunde.SumPrice().ToString();
-                        Ture.Add($"Rejse til: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {bil.KøretøjType()}. Pris: {bil.TotalPris()}");
+                        Ture.Add($"Rejse til Øresund: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {bil.KøretøjType()}. Pris: {bil.TotalPris()}");
                     }
                     else if (SelectedKøretøj != null && SelectedKøretøj.ToUpper() == "MC")
                     {
@@ -67,7 +67,7 @@ namespace TicketMaster
                         mc.Nummerplade = Nummerplade;
                         Kunde.Ture.Add(mc);
                         TotalPris = Kunde.SumPrice().ToString();
-                        Ture.Add($"Rejse til: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {mc.KøretøjType()}. Pris: {mc.TotalPris()}");
+                        Ture.Add($"Rejse til Øresund: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {mc.KøretøjType()}. Pris: {mc.TotalPris()}");
                     }
                 }
                 else if (SelectedBro != null && SelectedBro.ToUpper() == "STOREBÆLT")
@@ -80,7 +80,7 @@ namespace TicketMaster
                         bil.Nummerplade = Nummerplade;
                         Kunde.Ture.Add(bil);
                         TotalPris = Kunde.SumPrice().ToString();
-                        Ture.Add($"Rejse til: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {bil.KøretøjType()}. Pris: {bil.TotalPris()}");
+                        Ture.Add($"Rejse til Storebælt: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {bil.KøretøjType()}. Pris: {bil.TotalPris()}");
                     }
                     else if (SelectedKøretøj != null && SelectedKøretøj.ToUpper() == "MC")
                     {
@@ -90,7 +90,7 @@ namespace TicketMaster
                         mc.Nummerplade = Nummerplade;
                         Kunde.Ture.Add(mc);
                         TotalPris = Kunde.SumPrice().ToString();
-                        Ture.Add($"Rejse til: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {mc.KøretøjType()}. Pris: {mc.TotalPris()}");
+                        Ture.Add($"Rejse til Storebælt: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {mc.KøretøjType()}. Pris: {mc.TotalPris()}");
                     }
                 }
             }

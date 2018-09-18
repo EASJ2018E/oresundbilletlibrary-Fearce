@@ -279,7 +279,6 @@ namespace TicketMaster.TicketMaster_XamlTypeInfo
             case 4:   //  TicketMaster.MainPage
                 userType = new global::TicketMaster.TicketMaster_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_4_MainPage;
-                userType.AddMemberName("List");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -326,16 +325,6 @@ namespace TicketMaster.TicketMaster_XamlTypeInfo
             var that = (global::TicketMaster.ViewModel)instance;
             that.Pris = (global::System.String)Value;
         }
-        private object get_3_MainPage_List(object instance)
-        {
-            var that = (global::TicketMaster.MainPage)instance;
-            return that.List;
-        }
-        private void set_3_MainPage_List(object instance, object Value)
-        {
-            var that = (global::TicketMaster.MainPage)instance;
-            that.List = (global::System.Collections.Generic.List<global::System.String>)Value;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -361,12 +350,6 @@ namespace TicketMaster.TicketMaster_XamlTypeInfo
                 xamlMember = new global::TicketMaster.TicketMaster_XamlTypeInfo.XamlMember(this, "Pris", "String");
                 xamlMember.Getter = get_2_ViewModel_Pris;
                 xamlMember.Setter = set_2_ViewModel_Pris;
-                break;
-            case "TicketMaster.MainPage.List":
-                userType = (global::TicketMaster.TicketMaster_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TicketMaster.MainPage");
-                xamlMember = new global::TicketMaster.TicketMaster_XamlTypeInfo.XamlMember(this, "List", "System.Collections.Generic.List`1<String>");
-                xamlMember.Getter = get_3_MainPage_List;
-                xamlMember.Setter = set_3_MainPage_List;
                 break;
             }
             return xamlMember;

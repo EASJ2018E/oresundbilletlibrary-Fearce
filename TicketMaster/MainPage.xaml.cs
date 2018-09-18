@@ -27,38 +27,39 @@ namespace TicketMaster
     public sealed partial class MainPage : Page
     {
         DispatcherTimer Timer = new DispatcherTimer();
-        public List<string> List { get; set; }
+       // public List<string> List { get; set; }
         public MainPage()
         {
             this.InitializeComponent();
-            List = new List<string>();
+          //  List = new List<string>();
             Timer.Tick += Timer_Tick;
             Timer.Interval = new TimeSpan(0, 0, 1);
             Timer.Start();
         }
-        private void Timer_Tick(object sender, object e)
+
+        public void UpdatePrice()
         {
             try
             {
                 ViewModel.Dato = DatePicker.Date.UtcDateTime;
                 TotalPrisLabel.Text = ViewModel.Kunde.SumPrice().ToString();
-                if (List.Count != ViewModel.Ture.Count)
-                {
-                    List = new List<string>();
-                    foreach (var s in ViewModel.Ture)
-                    {
-                        List.Add(s);
-                    }
+                // if (List.Count != ViewModel.Ture.Count) //Update listen før jeg huskede observablecollection XD
+                // {
+                //     List = new List<string>();
+                //    foreach (var s in ViewModel.Ture)
+                //   {
+                //      List.Add(s);
+                // }
 
-                    Liste.ItemsSource = List;
-                }
+                //  Liste.ItemsSource = List;
+                // }
                 if (Bro.SelectedItem != null && Bro.SelectedItem.ToString().ToUpper() == "ØRESUND")
                 {
                     if (Køretøj.SelectedItem != null && Køretøj.SelectedItem.ToString().ToUpper() == "BIL")
                     {
                         Bil bil = new Bil();
                         bil.Dato = DatePicker.Date.UtcDateTime;
-                        if (Brobizz.IsChecked != null) bil.Brobizz = (bool) Brobizz.IsChecked;
+                        if (Brobizz.IsChecked != null) bil.Brobizz = (bool)Brobizz.IsChecked;
                         bil.Nummerplade = Nummerplade.Text;
                         PrisLabel.Text = bil.TotalPris().ToString();
                     }
@@ -101,14 +102,45 @@ namespace TicketMaster
             }
             catch (Exception ex)
             {
-                var messageDialog = new MessageDialog("Kontakt administrator med fejlen " + e).ShowAsync();
+                var messageDialog = new MessageDialog("Kontakt administrator med fejlen " + ex).ShowAsync();
             }
+        }
+
+        private void Timer_Tick(object sender, object e)
+        {
+           
 
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
             ViewModel.AddTicket();
+        }
+
+        //jajajajajaj DRY i know ok
+        private void Bro_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdatePrice();
+        }
+
+        private void Brobizz_OnChecked(object sender, RoutedEventArgs e)
+        {
+           UpdatePrice();
+        }
+
+        private void DatePicker_OnDateChanged(object sender, DatePickerValueChangedEventArgs e)
+        {
+            UpdatePrice();
+        }
+
+        private void Nummerplade_OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            UpdatePrice();
+        }
+
+        private void Køretøj_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdatePrice();
         }
     }
 }

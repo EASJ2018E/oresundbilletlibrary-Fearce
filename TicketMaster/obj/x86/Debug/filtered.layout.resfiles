@@ -9,4 +9,9 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
 TicketMaster.xr.xml
+dlls\BilletKundeApp.dll
+dlls\BilletLibrary.dll
+dlls\BilletLibrary.xml
+dlls\OresundBilletLibrary.dll
+dlls\StoreBaeltBilletLibrary.dll
 Properties\Default.rd.xml
