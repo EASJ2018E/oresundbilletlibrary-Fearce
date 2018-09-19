@@ -105,6 +105,7 @@ namespace TicketMaster
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
             ViewModel.AddTicket();
+            UpdatePrice();
         }
 
         //jajajajajaj DRY i know ok
