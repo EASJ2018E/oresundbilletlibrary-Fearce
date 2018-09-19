@@ -1,2 +1,4 @@
 
 *.lock
+*.ide-wal
+TicketMaster/.vs/TicketMaster/v15/.suo

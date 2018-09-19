@@ -57,6 +57,7 @@ namespace TicketMaster
                         bil.Nummerplade = Nummerplade;
                         Kunde.Ture.Add(bil);
                         TotalPris = Kunde.SumPrice().ToString();
+                        //var dd = decimal.Round(Kunde.SumPrice(), 2);
                         Ture.Add($"Rejse til Øresund: {Dato:dd-MM-yyyy}. Brobizz: {Brobizz}. Nummerplade: {Nummerplade}. Type: {bil.KøretøjType()}. Pris: {bil.TotalPris()}");
                     }
                     else if (SelectedKøretøj != null && SelectedKøretøj.ToUpper() == "MC")
